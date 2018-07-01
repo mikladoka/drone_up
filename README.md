@@ -3,7 +3,7 @@
 
 1. Create ubuntu machine
 1. Clone this repo onto that machine
-1. Populate variables in below script & run it on your virtual machine to create a drone.env file.
+1. [Setup github oauth application](https://github.com/paralect/deploy-drone/blob/master/OAUTH_APP.md) & create a drone.env file in the project root.
 
 ```
 #FILE="./drone.env"
@@ -17,3 +17,4 @@ DRONE_ADMIN=
 EOM
 ```
 4. Run start_up script
+
