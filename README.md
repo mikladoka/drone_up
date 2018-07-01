@@ -16,5 +16,5 @@ DRONE_GITHUB_SECRET=
 DRONE_ADMIN=
 EOM
 ```
-4. Run start_up script
+4. Run start_up script. This will install all prerequisites and start drone.
 
