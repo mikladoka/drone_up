@@ -1,4 +1,8 @@
 #install docker
+printf "=========================================="
+printf "=========================================="
+printf "=========================================="
+printf "Installing docker\n"
 sudo apt-get remove docker docker-engine docker.io
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
@@ -8,6 +12,10 @@ sudo apt-get update
 sudo apt-get install docker-ce -y
 
 #install docker compose
+printf "=========================================="
+printf "=========================================="
+printf "=========================================="
+printf "Installing docker compose\n"
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
@@ -53,5 +61,8 @@ services:
       # - DRONE_SECRET=
 EOM
 
-
+printf "=========================================="
+printf "=========================================="
+printf "=========================================="
+printf "Running docker compose\n"
 docker-compose --file ./docker-compose.yml up
