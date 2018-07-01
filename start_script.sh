@@ -31,8 +31,8 @@ services:
     environment:
       - DRONE_OPEN=false
       - DRONE_GITHUB=true
+      - DRONE_HOST=http://localhost:8000
       # Variables below set via drone.env file
-      #- DRONE_HOST=http://localhost:8000
       # - DRONE_GITHUB_CLIENT=
       # - DRONE_GITHUB_SECRET=
       # - DRONE_SECRET=
